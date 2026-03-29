@@ -2,12 +2,20 @@
     "version": "2.0.0",
     "tasks": [
         {
-            "label": "build sdl3 app",
+            "label": "build task101.cpp",
             "type": "shell",
-            "command": "g++ \"$(cygpath -u '${workspaceFolder}/Task_101/task101.cpp')\" -o \"$(cygpath -u '${workspaceFolder}/Task10X.exe')\" -I \"$(cygpath -u '${workspaceFolder}/src/include')\" -L \"$(cygpath -u '${workspaceFolder}/src/lib')\" -lSDL3 -mwindows -Wall -g",
+            "command": "g++ \"$(cygpath -u '${workspaceFolder}/task101.cpp')\" -o \"$(cygpath -u '${workspaceFolder}/task101.exe')\" -I \"$(cygpath -u '${workspaceFolder}/src/include')\" -L \"$(cygpath -u '${workspaceFolder}/src/lib')\" -lSDL3 -mwindows -Wall -g",
             "group": { "kind": "build", "isDefault": true },
             "problemMatcher": ["$gcc"],
-            "detail": "Builds the SDL3 application using g++"
+            "detail": "Builds task101.cpp into task101.exe"
+        },
+        {
+            "label": "build task102.cpp",
+            "type": "shell",
+            "command": "g++ \"$(cygpath -u '${workspaceFolder}/task102.cpp')\" -o \"$(cygpath -u '${workspaceFolder}/task102.exe')\" -I \"$(cygpath -u '${workspaceFolder}/src/include')\" -L \"$(cygpath -u '${workspaceFolder}/src/lib')\" -lSDL3 -mwindows -Wall -g",
+            "group": "build",
+            "problemMatcher": ["$gcc"],
+            "detail": "Builds task102.cpp into task102.exe"
         }
     ]
 }
