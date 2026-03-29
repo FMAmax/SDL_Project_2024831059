@@ -3,17 +3,17 @@
     "configurations": [
         
         {
-            "name": "Debug SDL3 App",
+            "name": "Debug task101.cpp",
             "type": "cppdbg",
             "request": "launch",
-            "program": "${workspaceFolder}/Task10X.exe", // Path to your compiled executable
+            "program": "${workspaceFolder}/task101.exe", 
             "args": [],
             "stopAtEntry": false,
             "cwd": "${workspaceFolder}",
             "environment": [],
-            "externalConsole": true, // Set to true to see console output in a separate window
+            "externalConsole": true, 
             "MIMode": "gdb", 
-            "miDebuggerPath": "C:/GCC new version/bin/gdb.exe", // Adjusted to your gdb debugger path
+            "miDebuggerPath": "C:/GCC new version/bin/gdb.exe", 
             "setupCommands": [
                 {
                     "description": "Enable pretty-printing for gdb",
@@ -21,7 +21,28 @@
                     "ignoreFailures": true
                 }
             ],
-            "preLaunchTask": "build sdl3 app" // Ensures the project is built before debugging
+            "preLaunchTask": "build task101.cpp" 
+        },
+        {
+            "name": "Debug task102.cpp",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/task102.exe", 
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}",
+            "environment": [],
+            "externalConsole": true, 
+            "MIMode": "gdb", 
+            "miDebuggerPath": "C:/GCC new version/bin/gdb.exe", 
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                }
+            ],
+            "preLaunchTask": "build task102.cpp" 
         }
     ]
 }
