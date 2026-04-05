@@ -43,11 +43,11 @@ int main(int argc, char* argv[]) {
 }
 
 bool init_game(GameState& state) {
-    if (!SDL_Init(SDL_INIT_VIDEO)) {
+    if (!SDL_Init(SDL_INIT_VIDEO)) {                    //initailizing and checking if initialized
         SDL_Log("SDL_Init Error: %s", SDL_GetError());
         return false;
     }
-
+    //creating and rendering window
     if (!SDL_CreateWindowAndRenderer("Task 102: Growing Circle", SCREEN_WIDTH, SCREEN_HEIGHT, 0, &state.window, &state.renderer)) {
         SDL_Log("Window/Renderer Error: %s", SDL_GetError());
         return false;
@@ -57,7 +57,9 @@ bool init_game(GameState& state) {
 }
 
 void handle_events(GameState& state) {
+    //creating event object
     SDL_Event event;
+    // checking inputs, if closed -> exits window
     while (SDL_PollEvent(&event)) {
         if (event.type == SDL_EVENT_QUIT) {
             state.is_running = false;

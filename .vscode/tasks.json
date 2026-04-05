@@ -5,7 +5,7 @@
             "label": "build task101.cpp",
             "type": "shell",
             "command": "g++ \"$(cygpath -u '${workspaceFolder}/task101.cpp')\" -o \"$(cygpath -u '${workspaceFolder}/task101.exe')\" -I \"$(cygpath -u '${workspaceFolder}/src/include')\" -L \"$(cygpath -u '${workspaceFolder}/src/lib')\" -lSDL3 -mwindows -Wall -g",
-            "group": { "kind": "build", "isDefault": true },
+            "group": "build",
             "problemMatcher": ["$gcc"],
             "detail": "Builds task101.cpp into task101.exe"
         },
@@ -13,9 +13,17 @@
             "label": "build task102.cpp",
             "type": "shell",
             "command": "g++ \"$(cygpath -u '${workspaceFolder}/task102.cpp')\" -o \"$(cygpath -u '${workspaceFolder}/task102.exe')\" -I \"$(cygpath -u '${workspaceFolder}/src/include')\" -L \"$(cygpath -u '${workspaceFolder}/src/lib')\" -lSDL3 -mwindows -Wall -g",
-            "group": "build",
+            "group": { "kind": "build", "isDefault": true },
             "problemMatcher": ["$gcc"],
             "detail": "Builds task102.cpp into task102.exe"
+        },
+        {
+            "label": "build task103.cpp",
+            "type": "shell",
+            "command": "g++ \"$(cygpath -u '${workspaceFolder}/task103.cpp')\" -o \"$(cygpath -u '${workspaceFolder}/task103.exe')\" -I \"$(cygpath -u '${workspaceFolder}/src/include')\" -L \"$(cygpath -u '${workspaceFolder}/src/lib')\" -lSDL3 -mwindows -Wall -g",
+            "group": "build",
+            "problemMatcher": ["$gcc"],
+            "detail": "Builds task103.cpp into task103.exe"
         }
     ]
 }
