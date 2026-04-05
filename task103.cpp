@@ -39,7 +39,7 @@ int main(int argc, char* argv[]){
         handle_events(state);
         update_game(state);
         render_game(state);
-        SDL_Delay(16);
+        SDL_Delay(16);          // 1000ms/60=16ms
     }
     cleanup(state);
     return 0;
